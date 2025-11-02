@@ -23,3 +23,7 @@ In order to prevent an **attacker** from **accessing other users' passwords**, I
 In order to prevent an **attacker** from **changing other users' passwords**, I think using **authentication** will still prevent malicious action to users' accounts.</br>
 In order to prevent an **attacker from brute forcing a user's password**, **implementing some way to check for repeated password attmepts will help mitigate their ability to brute force a password**.</br>
 In order to prevent an **attacker from attempting to use an XSS attack**, I will be **sanitizing a user's input or limiting what characters they can use**. (All user input is evil)
+
+# Mockup
+![App Mockup](./mockup.pdf)
+![C4 model](./C4 model.png)
