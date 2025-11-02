@@ -25,7 +25,7 @@ In order to prevent an **attacker from brute forcing a user's password**, **impl
 In order to prevent an **attacker from attempting to use an XSS attack**, I will be **sanitizing a user's input or limiting what characters they can use**. (All user input is evil)
 
 # Mockup
-![App Mockup](./mockup.pdf)
+![App Mockup](./mockup.pdf) </br>
 
-# C4 Model Drawups
+# C4 Model Drawups </br>
 ![C4 model](./C4model.png)
