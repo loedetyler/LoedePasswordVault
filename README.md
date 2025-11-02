@@ -27,15 +27,20 @@ As a **developer**, the acceptance criteria would be **regularly maintaining and
 As a **support role**, the acceptance criteria would be **being able to reset users' passwords and getting them access back into their vaults**. 
 
 # Mis-user Stories
-As a **misuser**, I want to **access other users' passwords** so I can **steal their passwords**.</br>
-As a **misuser**, I want to **change other users' stored passwords** so I can **cause chaos**.</br>
-As a **misuser**, I want to **change other users' account emails and passwords** so I can **potentially ransom their account**.</br>
-As a **misuser**, I want to **access other users' passwords** so I can **sell access to their accounts**.
+As an **attacker**, I want to **access other users' passwords** so I can **steal their passwords**.</br>
+As an **attacker**, I want to **change other users' stored passwords** so I can **cause chaos**.</br>
+As an **attacker**, I want to **change other users' account emails and passwords** so I can **potentially ransom their account**.</br>
+As an **attacker**, I want to **access other users' passwords** so I can **sell access to their accounts**.</br>
+As an **attacker**, I want to **brute force a user's password** so I can **gain access to their acccount**.</br>
+As an **attacker**, I want to **inject code into any available textbox** so I can **gain access to things I shouldn't be able to access**.
 
 # Mitigation Criteria
-In order to prevent a **misuser** from **accessing other users' passwords**, I want to use **authentication of users**.</br>
-In order to prevent a **misuser** from **changing other users' passwords**, I think using **authentication** will still prevent malicious action to users' accounts.</br>
-As a **role**, the acceptance criteria would be **line**. 
+In order to prevent an **attacker** from **accessing other users' passwords**, I want to use **authentication of users**.</br>
+In order to prevent an **attacker** from **changing other users' passwords**, I think using **authentication** will still prevent malicious action to users' accounts.</br>
+In order to prevent an **attacker from brute forcing a user's password**, **implementing some way to check for repeated password attmepts will help mitigate their ability to brute force a password**.</br>
+In order to prevent an **attacker from attempting to use an XSS attack**, I will be **sanitizing a user's input or limiting what characters they can use**. (All user input is evil)
+
+# Design
 
 # License
 
