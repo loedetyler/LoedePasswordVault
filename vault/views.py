@@ -1,6 +1,10 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+# from django.http import HttpResponse
 
-def index(request):
-    return HttpResponse("Hello, world. You've reached the vault.")
-# Create your views here.
+def homepage(request):
+#    return HttpResponse("Hello, world. You've reached the vault.")
+    return render(request, 'home.html')
+
+def about(request):
+#    return HttpResponse("This is the about page.")
+    return render(request, 'about.html')
