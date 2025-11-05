@@ -3,16 +3,15 @@ I have decided to create and containerize a simple password manager/vault. Users
 
 # Installation
 ```bash
-docker-build .
-docker-compose run django bash
-python manage.py migrate
-python manage.py createsuperuser
+Fork this github repository
 ```
 
 # Getting Started
 To run my top of the line password vault, simply use the following:
 ```bash
-docker-compose up
+Open a command prompt.
+Navigate to the folder where this was forked to.
+Run "python manage.py runserver"
 ```
 # License
 

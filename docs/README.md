@@ -2,13 +2,13 @@
 As a **user**, I want to **securely store my passwords** so I can **easily access and add passwords** </br>
 As an **admin**, I want to **be able to view and manage logs** so I can **watch for misuse and would be able to deactivate/delete malicious user accounts**. (Additional note: admins will **not** be able to see users' passwords.)</br>
 As a **developer**, I want to **update and maintain the code** so I can **keep the users's passwords secure**.</br>
-As a **support role**, I want to **be able to reset users' passwords if they forget them** so **the user can have access to their password vault**.
+As a **support role**, I want to **be able to reset users' passwords if they forget them** so **the user can have access to their password vault**. </br>
 
 # Acceptance Criteria
 As a **user**, the acceptance criteria would be **not allowing other users to see my passwords**.</br>
 As an **admin**, the acceptance criteria would be **the ability to delete or deactivate users' accounts without being able to see their passwords**.</br>
 As a **developer**, the acceptance criteria would be **regularly maintaining and updating the code**.</br>
-As a **support role**, the acceptance criteria would be **being able to reset users' passwords and getting them access back into their vaults**. 
+As a **support role**, the acceptance criteria would be **being able to reset users' passwords and getting them access back into their vaults**. </br>
 
 # Mis-user Stories
 As an **attacker**, I want to **access other users' passwords** so I can **steal their passwords**.</br>
