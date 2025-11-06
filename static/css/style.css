@@ -29,7 +29,16 @@ nav {
     align-items: center;
     gap: 20px;
 }
+/*
+.burger ul {
+    list-style-type: none;
+}
 
+.burger ul li {
+    display: inline-flex;
+    margin: 5px 16px;
+}
+*/
 .user {
     display: flex;
     align-items: center;
