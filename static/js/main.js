@@ -1,1 +1,1 @@
-console.log('This is JS from my About page')
+console.log('This is logging')
