@@ -74,3 +74,4 @@ You can easily do this with **CSS flexbox**. Here’s a simple example:
 </aside>
 
 I kept going back and forth tweaking little things here and there because the Nav bar wouldn’t align the user to the right, ChatGPT suggested I hit Ctrl + Shift + R to hard refresh and that worked. It updated to how I wanted.
+I also did not use all of the code ChatGPT sent me, just took bits and pieces
