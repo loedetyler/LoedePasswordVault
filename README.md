@@ -3,7 +3,7 @@ I have decided to create and containerize a simple password manager/vault. Users
 
 # Installation
 ```bash
-Fork this github repository
+Clone this github repository
 ```
 
 # Getting Started
