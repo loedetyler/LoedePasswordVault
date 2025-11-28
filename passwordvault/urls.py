@@ -24,4 +24,5 @@ urlpatterns = [
     path('about/', views.about),
     path('vault/', include('vault.urls')),
     path('login/', views.login),
+    path('register/', views.register),
 ]
