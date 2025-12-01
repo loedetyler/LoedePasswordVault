@@ -88,3 +88,7 @@ a {
 a:hover {
     opacity: .85;
 }
+
+.form-with-validation {
+    font-size: 16px;
+}

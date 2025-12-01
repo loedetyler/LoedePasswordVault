@@ -1,0 +1,15 @@
+<!--ask user for email, first name, last name, password-->
+{% extends 'layout.html' %}
+
+{% block title %}
+    New user
+{% endblock %}
+
+{% block content %}
+    <h1>Register a New User</h1>
+    <form class="form-with-validation" action="/users/register/" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button>Submit</button>
+    </form>
+{% endblock %}
