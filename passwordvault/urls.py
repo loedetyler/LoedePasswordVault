@@ -23,8 +23,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('about/', views.about),
     path('vault/', include('vault.urls')),
-    path('users/login/', views.login),
-    path('users/register/', views.register),
+    path('users/login/', views.login_view, name="login"),
+    path('users/register/', views.register_view, name="register"),
     #path('dashboard/', views.dashboard),
     #path('invalid/', views.invalid),
 ]

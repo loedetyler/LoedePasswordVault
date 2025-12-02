@@ -1,31 +1,14 @@
 {% extends 'layout.html' %}
 
 {% block title %}
-    Log In
+    Login
 {% endblock %}
 
 {% block content %}
-    <div class="box">    
-        <h1>Log In</h1>
-        <label for="email">Email: </label>
-        <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            pattern=".+#example\.com"
-        />
-    </br>
-        <label for="pass">Password: </label>
-        <input
-            type="password"
-            id="pass"
-            name="password"
-            required
-        />
-</br>
-        <input type="submit" value="Sign in"/>
-        <input type="button" value="New User"/>
-    </div>
-
+    <h1>Login</h1>
+    <form class="forms" action="/users/login/" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button>Submit</button>
+    </form>
 {% endblock %}
