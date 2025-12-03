@@ -25,6 +25,6 @@ urlpatterns = [
     path('vault/', include('vault.urls')),
     path('users/login/', views.login_view, name="login"),
     path('users/register/', views.register_view, name="register"),
-    #path('dashboard/', views.dashboard),
+    path('users/logout/', views.logout_view, name="logout"),
     #path('invalid/', views.invalid),
 ]
