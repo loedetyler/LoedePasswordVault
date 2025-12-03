@@ -1,4 +1,4 @@
-<!--Where all the passwords will be stored-->
+<!--Where all the passwords will be stored and presented-->
 {% extends 'layout.html' %}
 
 {% block title %}
@@ -6,6 +6,7 @@
 {% endblock %}
 
 {% block content %}
+{% if user.is_authenticated %}
     <h1>The Vault</h1>
     <table>
         <tr>
@@ -13,15 +14,20 @@
             <th>Password</th>
         </tr>
     </table>
-    <form>
-        <input type="button" value="Add a new account" onclick="newAccount()">
+    <!--I eventually want this to be behind another button-->
+    <form method="post" action="{% url 'add_password' %}">
+        {% csrf_token %}
+        <label for="site">Site:</label>
+        <input type="text" name="site" required>
+        <br>
+        <label for="username">Username:</label>
+        <input type="text" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="text" name="password" required>
+        <button type="submit">Submit</button>
     </form>
-    <script>
-        function newAccount(){
-            alert("Enter new account information");
-            let newSite = prompt("Please enter the site: ", "www.example.com");
-            let newUser = prompt("Please enter the username: ", "tloede");
-            let newPass = prompt("Please enter the password: ", "Password");
-        }
-    </script>
+    {% else %}
+        <p>Please <a href="/users/login">sign in</a> or <a href="/users/register/">create an account</a></p>
+    {% endif %}
 {% endblock %}
