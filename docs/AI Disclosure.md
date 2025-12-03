@@ -1,3 +1,5 @@
+Many moons have passed since my last update on this AI Disclosure for the reason of I have been mainly using API docs and W3 schools and other online resources to try and piece together my password vault. I have now primarily been using ChatGPT to troubleshoot my errors and ask it for resources where I can find the answers instead of just asking it "How do I do this?".
+
 I asked ChatGPT 
 
 <aside>
@@ -74,4 +76,5 @@ You can easily do this with **CSS flexbox**. Here’s a simple example:
 </aside>
 
 I kept going back and forth tweaking little things here and there because the Nav bar wouldn’t align the user to the right, ChatGPT suggested I hit Ctrl + Shift + R to hard refresh and that worked. It updated to how I wanted.
-I also did not use all of the code ChatGPT sent me, just took bits and pieces
+I also did not use all of the code ChatGPT sent me, just took bits and pieces.
+

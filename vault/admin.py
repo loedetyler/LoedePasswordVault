@@ -3,7 +3,7 @@ from .models import Pass
 # Register your models here.
 
 class PassAdmin(admin.ModelAdmin):
-    list_display = ('username', 'password', 'site', 'owner')
+    list_display = ('site', 'username', 'password', 'owner')
     search_fields = ('username', 'site',)
     list_filter = ('username', 'site',)
     list_display_links = ('username', 'site',)

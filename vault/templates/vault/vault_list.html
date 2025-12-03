@@ -10,9 +10,17 @@
     <h1>The Vault</h1>
     <table>
         <tr>
+            <th>Site</th>
             <th>Username</th>
             <th>Password</th>
         </tr>
+        {% for entry in passwords %} 
+            <tr>
+                <td>{{ entry.site }}</td>
+                <td>{{ entry.username }}</td>
+                <td>{{ entry.password }}</td>
+            </tr>
+        {% endfor %}
     </table>
     <!--I eventually want this to be behind another button-->
     <form method="post" action="{% url 'add_password' %}">
@@ -26,6 +34,7 @@
         <label for="password">Password:</label>
         <input type="text" name="password" required>
         <button type="submit">Submit</button>
+        <input type="hidden" name="owner" value={{user.username}}>
     </form>
     {% else %}
         <p>Please <a href="/users/login">sign in</a> or <a href="/users/register/">create an account</a></p>
