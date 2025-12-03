@@ -6,6 +6,7 @@ class Pass(models.Model):
     owner = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
     password = models.CharField(max_length=30)
     username = models.CharField(max_length=25)
+    site = models.CharField(max_length=100)
 
     def __str__(self):
         return self.name

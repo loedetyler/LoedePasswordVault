@@ -13,4 +13,15 @@
             <th>Password</th>
         </tr>
     </table>
+    <form>
+        <input type="button" value="Add a new account" onclick="newAccount()">
+    </form>
+    <script>
+        function newAccount(){
+            alert("Enter new account information");
+            let newSite = prompt("Please enter the site: ", "www.example.com");
+            let newUser = prompt("Please enter the username: ", "tloede");
+            let newPass = prompt("Please enter the password: ", "Password");
+        }
+    </script>
 {% endblock %}
