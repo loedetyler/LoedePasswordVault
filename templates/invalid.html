@@ -1,1 +1,14 @@
-<!--Username or password is incorrect-->
+{% extends 'layout.html' %}
+
+{% block title %}
+    Invalid Link
+{% endblock %}
+{% block auth_title %}
+    Invalid Link
+{% endblock %}
+{% block unauth_title %}
+    Invalid Link
+{% endblock %}
+{% block content %}
+    <p>The link you tried reaching does not exist<p>
+{% endblock %}

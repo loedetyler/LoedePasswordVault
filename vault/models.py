@@ -10,4 +10,4 @@ class Pass(models.Model):
     exclude = ["owner"]
 
     def __str__(self):
-        return self.name
+        return self.username

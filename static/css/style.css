@@ -22,46 +22,8 @@ nav {
     color: gray;
     font-size: 25px;
     line-height: 1;
+    position: relative;
 }
-
-.links {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-/*
-.burger ul {
-    list-style-type: none;
-}
-
-.burger ul li {
-    display: inline-flex;
-    margin: 5px 16px;
-}
-*/
-.user {
-    display: flex;
-    align-items: center;
-}
-
-.quotes {
-    display: flex;
-    /*align-items: center;*/
-    text-align: center;
-    gap: 20px;
-    justify-content: space-around;
-}
-
-.quote {
-    padding: 25px;
-    font-size: 20px;
-    align-items: center;
-}
-
-main {
-    font-size: 45px;
-} 
-
 
 h1, p {
     text-align: center;
@@ -73,11 +35,28 @@ h3 {
     text-decoration-line: underline;
 }
 
-#why {
-    text-align: center;
-    font-size: 20px;
-    margin-left: 15%;
-    margin-right: 15%;
+main {
+    font-size: 35px;
+}
+
+td, th {
+    border: 1px solid darkgray;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #202120;
+}
+
+tr:hover {
+    background-color: #333634;
+}
+
+th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    background-color: #7a0101;
 }
 
 a {
@@ -89,6 +68,75 @@ a:hover {
     opacity: .85;
 }
 
+ul {
+    list-style-type: none;
+}
+
+.links, .user {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.quotes {
+    display: flex;
+    text-align: center;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.quote {
+    padding: 25px;
+    font-size: 20px;
+    align-items: center;
+}
+
+.collapsible {
+    background-color: #B01C12;
+    color:aliceblue;
+    cursor: pointer;
+    padding: 8px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 25px;
+}
+
+.active .collapsible:hover {
+    background-color: #B01C12;
+}
+
+.content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0 18px;
+    background-color: #B01C12;
+    list-style-type: none;
+    z-index: 10;
+}
+
+.user .content {
+    right: 0;
+    left: auto;
+}
 .forms {
     font-size: 16px;
+}
+
+.passTable {
+    text-decoration: none;
+}
+
+#why {
+    text-align: center;
+    font-size: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#newPass {
+    color:blue;
 }

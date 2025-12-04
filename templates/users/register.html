@@ -2,11 +2,15 @@
 {% extends 'layout.html' %}
 
 {% block title %}
-    New user
+    Register
 {% endblock %}
-
+{% block auth_title %}
+    Register a new user
+{% endblock %}
+{% block unauth_title %}
+    Register a new user
+{% endblock %}
 {% block content %}
-    <h1>Register a New User</h1>
     <form class="forms" action="/users/register/" method="post">
         {% csrf_token %}
         {{ form }}

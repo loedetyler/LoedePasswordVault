@@ -19,6 +19,6 @@ def add_password(request):
         entry = Pass(owner=owner, username=user, site=site, password=newpass)
         entry.save()
 
-        return HttpResponse("Account successfully added.")
+        return redirect("vault")
     else:
         return HttpResponse("Invalid request method")

@@ -3,9 +3,13 @@
 {% block title %}
     Login
 {% endblock %}
-
+{% block auth_title %}
+    Login
+{% endblock %}
+{% block unauth_title %}
+    Login
+{% endblock %}
 {% block content %}
-    <h1>Login</h1>
     <form class="forms" action="/users/login/" method="post">
         {% csrf_token %}
         {{ form }}
