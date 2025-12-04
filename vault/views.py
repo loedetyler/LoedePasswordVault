@@ -22,3 +22,4 @@ def add_password(request):
         return redirect("vault")
     else:
         return HttpResponse("Invalid request method")
+    
