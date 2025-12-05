@@ -10,7 +10,7 @@ Clone this github repository
 To run my top of the line password vault, simply use the following:
 ```bash
 Open a command prompt.
-Navigate to the folder where this was forked to.
+Navigate to the folder where this was cloned to.
 Run "python manage.py runserver"
 ```
 # License
