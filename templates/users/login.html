@@ -12,7 +12,14 @@
 {% block content %}
     <form class="forms" action="/users/login/" method="post">
         {% csrf_token %}
-        {{ form }}
-        <button>Submit</button>
+        <div class="form-username">
+            {{ form.username.label }}
+            {{ form.username }}
+        </div>
+        <div class="login-form-password">
+            {{ form.password.label }}
+            {{ form.password }}
+        </div>
+        <button class="form-submit">Submit</button>
     </form>
 {% endblock %}

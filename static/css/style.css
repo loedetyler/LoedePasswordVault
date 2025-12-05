@@ -19,10 +19,19 @@ nav {
     align-items: center;
     padding: 12px;
     background-color: #B01C12;
-    color: gray;
+    color: #ffcfcf;
     font-size: 25px;
     line-height: 1;
     position: relative;
+}
+
+nav ul li {
+    border-bottom: 1px solid black;
+    padding: 10px 20px;
+}
+
+nav ul li:last-child {
+    border-bottom: none;
 }
 
 h1, p {
@@ -61,7 +70,7 @@ th {
 
 a {
     text-decoration: none;
-    color:rgb(136, 132, 132);
+    color:aliceblue;
 }
 
 a:hover {
@@ -91,6 +100,12 @@ ul {
     align-items: center;
 }
 
+.passTable {
+    width: fit-content;
+    padding-top: 20px;
+    margin: 0px auto;
+}
+
 .collapsible {
     background-color: #B01C12;
     color:aliceblue;
@@ -116,18 +131,41 @@ ul {
     background-color: #B01C12;
     list-style-type: none;
     z-index: 10;
+    border-radius: 4%;
+    border: 2px solid darkslategray;
 }
 
 .user .content {
     right: 0;
     left: auto;
 }
+
 .forms {
-    font-size: 16px;
+    font-size: 22px;
+    padding: 10px;
 }
 
-.passTable {
-    text-decoration: none;
+.form-username {
+    text-align: center;
+}
+
+.form-password {
+    text-align: center;
+}
+
+.form-password2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.login-form-password {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.form-submit {
+    display: block;
+    margin: 0 auto;
 }
 
 #why {
@@ -138,5 +176,10 @@ ul {
 }
 
 #newPass {
-    color:blue;
+    color:white;
+}
+
+#toggleNewPass {
+    font-size: 18px;
+    margin-top: 15px;
 }
