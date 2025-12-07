@@ -2,7 +2,7 @@
 Here at Loede Enterprises, we take password security seriously. That's why we developed a password manager to help you remember your passwords easier and make more complex passwords.
 
 
-# Installation
+# Installation (If you want to run locally)
 
 Clone this github repository <br>
 Make sure Python is installed <br>
